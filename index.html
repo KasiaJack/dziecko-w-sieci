@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Konferencja „Dobro dziecka – wspólny cel"</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="top">
+
+<!-- =================== NAGŁÓWEK =================== -->
+
+<header>
+  <div class="container nav">
+          
+    <a href="#top" class="logo" aria-label="Strona główna">
+    <img src="logo4.png" alt="Logo konferencji">
+    </a>
+
+  <nav class="main-nav" aria-label="Główne menu">
+    <a href="#" data-target="home">O wydarzeniu</a>
+    <a href="#" data-target="agenda">Agenda</a>
+    <a href="#" data-target="prelegenci">Prelegenci i patronaci</a>
+    <a href="#" data-target="faq">FAQ</a>
+    <a href="#" data-target="kontakt">Kontakt</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Otwórz menu">
+      <span></span>
+      <span></span>
+      <span></span>
+   </button>
+
+  <button id="theme-toggle" class="theme-toggle" aria-label="Zmień tryb">
+    <span class="icon sun">☀️</span>
+    <span class="icon moon">🌙</span>
+  </button>
+
+  </div>
+</header>
+
+<!-- =================== HERO =================== -->
+
+<section class="hero page-section" data-page="home">
+  <div class="container hero-content">
+
+    <p class="eyebrow">Konferencja ekspercka</p>
+
+    <h1>„Dziecko w Sieci – Bezpieczeństwo, Rozwój, Odpowiedzialność”</h1>
+
+    <p class="lead">
+      Wspólnie dzielimy się rozwiązaniami, które realnie wspierają dobro dziecka
+      w edukacji, zdrowiu i opiece.
+    </p>
+
+  </div>
+</section>
+
+<main class="container">
+
+<!-- =================== O WYDARZENIU =================== --> 
+
+<section id="o-wydarzeniu" class="page-section section-soft" data-page="home">
+
+  <h2>O wydarzeniu</h2>
+
+    <img src="Foto2.png"
+      alt="Symboliczna grafika przedstawiająca współpracę instytucji na rzecz dobra dziecka"
+      class="about-image" >
+
+    <div class="about-problem">
+      <p>
+        Dzieci dorastają dziś w świecie, który zmienia się szybciej niż systemy,
+        które mają je chronić.    
+      </p>
+
+      <p>
+        Cyfrowa przestrzeń stała się naturalnym środowiskiem rozwoju,
+        ale niesie ze sobą zagrożenia, których dziecko nie jest w stanie
+        rozpoznać ani udźwignąć bez wsparcia dorosłych.
+      </p>
+    </div>
+
+    <div class="about-definition">
+    <p>
+      Konferencja „Dziecko w Sieci – Bezpieczeństwo, Rozwój, Odpowiedzialność”
+      to eksperckie spotkanie poświęcone wpływowi środowiska cyfrowego na 
+      rozwój i zdrowie psychiczne dzieci oraz młodzieży. </p>
+
+     <p>
+      Wydarzenie powstało z potrzeby rozmowy o odpowiedzialności dorosłych, 
+      instytucji i systemów za bezpieczeństwo dzieci 
+      w świecie online oraz o realnej współpracy międzysektorowej. </p>
+     </div>
+</section>
+
+<section id="countdown" class="page-section countdown-section" data-page="home">
+
+  <h2> Do rozpoczęcia konferencji pozostało:</h2>
+  <div class="countdown" id="countdown" data-page="home">
+    <div class="countdown-item">
+      <span class="countdown-value" id="cd-days">0</span>
+      <span class="countdown-label">dni</span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-value" id="cd-hours">0</span>
+      <span class="countdown-label">godzin</span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-value" id="cd-minutes">0</span>
+      <span class="countdown-label">minut</span>
+    </div>
+    <div class="countdown-item">
+      <span class="countdown-value" id="cd-seconds">0</span>
+      <span class="countdown-label">sekund</span>
+    </div>
+  </div>
+
+</section>
+
+<!-- =================== WIDEO =================== -->
+
+<section class="page-section" data-page="home" aria-label="Wideo promocyjne">
+
+  <h2>Film promocyjny </h2>
+
+  <video controls width="100%">
+
+  <source src="film.mp4" type="video/mp4">
+
+    Twoja przeglądarka nie obsługuje formatu MOV.
+
+  </video>
+
+</section>
+
+<!-- =================== PLAKAT =================== -->
+
+<section id="plakat" class="page-section" data-page="home">
+
+  <h2>Plakat wydarzenia</h2>
+
+  <img src="plakat.jpg" alt="Plakat: Konferencja Dobro dziecka – wspólny cel">
+
+</section>
+
+<!-- =================== LOKALIZACJA =================== -->
+
+<section id="lokalizacja" class="card page-section" data-page="home">
+  <div class="grid-2">
+
+    <div class="card location-info left">
+      <h2>Lokalizacja</h2>
+
+      <ul class="location-list">
+        <li>
+          <span class="icon">📍</span>
+          <span>
+            <strong>Międzyrzecki Ośrodek Kultury</strong><br>
+            ul. Konstytucji 3 Maja 30<br>
+            66-300 Międzyrzecz
+          </span>
+        </li>
+
+        <li>
+          <span class="icon">🚪</span>
+          <span>Wejście od ul. Konstytucji 3 Maja</span>
+        </li>
+
+        <li>
+          <span class="icon">🚗</span>
+          <span>Parking bezpłatny</span>
+        </li>
+      </ul>
+    </div>
+
+  <div class="card location-map">
+    <iframe
+      title="Mapa Google"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9728.035055876282!2d15.572635737759413!3d52.44275601009732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4706f4831329d2cd%3A0x9384567fc29bf6e6!2sMi%C4%99dzyrzecki%20O%C5%9Brodek%20Kultury!5e0!3m2!1spl!2spl!4v123"
+      style="border:0;"
+      allowfullscreen>
+    </iframe>
+
+    <a
+      class="map-cta under-map"
+      href="https://maps.google.com/?q=Międzyrzecki+Ośrodek+Kultury"
+      target="_blank"
+      rel="noopener" >
+      Otwórz w Google Maps
+    </a>
+  </div>
+
+</section>
+
+<!-- =================== AGENDA =================== -->
+
+<section id="agenda" class="agenda-section page-section" data-page="agenda">
+
+  <h2 class="agenda-title">Agenda</h2>
+
+    <div class="agenda-timeline">
+
+    <!-- OTWARCIE -->
+    <article class="agenda-item">
+      <time class="agenda-time">09:00</time>
+        <div class="agenda-card">
+          <span class="agenda-badge">organizacja</span>
+          <h3>Rejestracja uczestników i poranna kawa</h3>
+          <p>Zespół organizatorów</p>
+        </div>
+    </article>
+
+    <article class="agenda-item">
+      <time class="agenda-time">09:30</time>
+        <div class="agenda-card">
+          <span class="agenda-badge">otwarcie</span>
+          <h3>Otwarcie konferencji i wprowadzenie do tematu ochrony dzieci w sieci</h3>
+          <p>mgr Iwona Jackowska, przedstawiciele instytucji publicznych</p>
+        </div>
+    </article>
+
+  <!-- BLOK I -->
+    <article class="agenda-item">
+      <time class="agenda-time">10:05</time>
+        <div class="agenda-card">
+          <span class="agenda-badge expert">blok tematyczny</span>
+          <h3>Ochrona dzieci w sieci jako zadanie państwa i systemu edukacji</h3>
+          <p>Wystąpienia instytucjonalne</p>
+        </div>
+    </article>
+
+  <!-- BLOK II -->
+    <article class="agenda-item">
+      <time class="agenda-time">10:45</time>
+        <div class="agenda-card">
+          <span class="agenda-badge expert">wykład</span>
+          <h3>Współczesne zagrożenia cyfrowe: hejt, pornografia, uzależnienia behawioralne</h3>
+          <p>mgr Przemysław Najmuł</p>
+        </div>
+    </article>
+
+    <article class="agenda-item">
+      <time class="agenda-time">11:15</time>
+        <div class="agenda-card">
+          <span class="agenda-badge expert">wykład</span>
+          <h3>Uzależnienia cyfrowe jako nowe wyzwanie zdrowia psychicznego dzieci</h3>
+          <p>mgr Izabela Sumińska</p>
+        </div>
+    </article>
+
+    <article class="agenda-item">
+      <time class="agenda-time">11:45</time>
+        <div class="agenda-card">
+          <span class="agenda-badge expert">wykład</span>
+          <h3>Praca terapeutyczna z dzieckiem uzależnionym od sieci</h3>
+          <p>mgr Anna Czekanowska</p>
+        </div>
+    </article>
+
+  <!-- BLOK III -->
+    <article class="agenda-item">
+      <time class="agenda-time">12:05</time>
+        <div class="agenda-card">
+          <span class="agenda-badge expert">wykład</span>
+          <h3>Przestępczość internetowa wobec dzieci</h3>
+          <p>asp. Adam Zauski</p>
+        </div>
+    </article>
+
+    <article class="agenda-item">
+      <time class="agenda-time">12:35</time>
+        <div class="agenda-card">
+          <span class="agenda-badge expert">perspektywa społeczna</span>
+          <h3>Stanowisko Kościoła wobec uzależnień behawioralnych związanych z technologią</h3>
+          <p>Przedstawiciel Diecezji Zielonogórsko-Gorzowskiej</p>
+        </div>
+    </article>
+
+  <!-- PRZERWA -->
+    <article class="agenda-item break">
+      <time class="agenda-time">13:05</time>
+        <div class="agenda-card">
+          <span class="agenda-badge break">przerwa</span>
+          <h3>Przerwa</h3>
+        </div>
+    </article>
+
+  <!-- BLOK IV -->
+    <article class="agenda-item">
+      <time class="agenda-time">13:25</time>
+        <div class="agenda-card">
+          <span class="agenda-badge expert">wykład</span>
+          <h3>Neurobiologiczne konsekwencje świata cyfrowego dla rozwoju dziecka</h3>
+          <p>dr n. med. Zakowicz</p>
+        </div>
+    </article>
+
+    <article class="agenda-item">
+      <time class="agenda-time">13:55</time>
+        <div class="agenda-card">
+          <span class="agenda-badge expert">warsztat / wykład</span>
+          <h3>Diagnoza cyberzaburzeń</h3>
+          <p>Agnieszka Taper</p>
+        </div>
+    </article>
+
+  <!-- ZAKOŃCZENIE -->
+    <article class="agenda-item">
+      <time class="agenda-time">14:55</time>
+        <div class="agenda-card">
+          <span class="agenda-badge">panel</span>
+          <h3>Dyskusja i wymiana doświadczeń</h3>
+          <p>Uczestnicy konferencji</p>
+        </div>
+    </article>
+
+    <article class="agenda-item">
+      <time class="agenda-time">15:55</time>
+        <div class="agenda-card">
+          <span class="agenda-badge">zakończenie</span>
+          <h3>Podsumowanie i zakończenie konferencji</h3>
+          <p>mgr Maciej Jackowski</p>
+        </div>
+    </article>
+
+  </div>
+
+</section>
+
+<!-- =================== PRELEGENCI =================== -->
+
+<section id="prelegenci" class="prelegenci page-section" data-page="prelegenci">
+
+  <h2>Prelegenci</h2>
+
+  <div class="speakers" role="list">
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>mgr Maciej Jackowski</h3>
+      <p>Specjalista psychiatrii.</p>
+    </article>
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>mgr Iwona Jackowska</h3>
+      <p>Specjalista psychiatrii.</p>
+    </article>
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>poseł Maja Nowak</h3>
+      <p>Sekretarz stanu w Ministerstwie Rodziny, Pracy i Polityki Społecznej</p>
+    </article>
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>Izabela Ziętka</h3>
+      <p>Podsekretarz stanu w Ministerstwie Edukacji Narodowej</p>
+    </article>
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>Monika Horna-Cieślak</h3>
+      <p>Rzecznik Praw Dziecka</p>
+    </article>
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>mgr Przemysław Najmuł</h3>
+      <p>Prezes fundacji promocji zdrowia psychicznego FENIKS</p>
+    </article>
+
+    <article role="listitem">
+      <img src="przemyslaw.jpg" alt="Zdjęcie prelegenta: Przemysław Zakowicz" />
+      <h3>dr Przemysław Zakowicz</h3>
+      <p>Konsultant Wojewódzki Psychiatrii Dzieci i Młodzieży.</p>
+    </article>
+
+    <article role="listitem">
+      <img src="Iza.jpg" alt="Zdjęcie prelegentki: Iza Sumińska" class="focus-down"/>
+      <h3>mgr Iza Sumińska</h3>
+      <p>Konsultant Wojewódzki w dziedzinie Psychologii Klinicznej. </p>
+    </article>
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>mgr Anna Czekanowska</h3>
+      <p>...</p>
+    </article>
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>asp. Adam Zauski</h3>
+      <p>Zastępca Komendanta</p>
+    </article>
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>Ksiądz</h3>
+      <p>...</p>
+    </article>
+
+    <article role="listitem">
+      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Błazej Antosz" />
+      <h3>prof. dr. hab. Mariusz Jędrzejko</h3>
+      <p>...</p>
+    </article>
+
+    </article>
+
+    </div>
+
+</section>
+
+<!-- =================== PATRONACI =================== -->
+
+<section id="patronaci" class="page-section" data-page="prelegenci">
+
+  <h2>Patronaci</h2>
+
+    <div class="logos">
+
+      <article>
+        <a href="https://www.nfz.gov.pl" target="_blank" rel="noopener" class="patron-link">
+          <img src="logo1.png" alt="Narodowy Fundusz Zdrowia">
+          <h3>Narodowy Fundusz Zdrowia</h3>
+        </a>
+      </article>
+
+      <article>
+        <a href="https://www.gov.pl/web/uw-lubuski/wojewoda-lubuski-marek-cebula" target="_blank" rel="noopener">
+          <img src="logo2.png" alt="Zdjęcie Logo" />
+          <h3>Wojewoda Lubuski</h3>
+        </a>
+      </article>
+
+      <article>
+        <a href="https://ko-gorzow.edu.pl/" target="_blank" rel="noopener">
+          <img src="logo3.png" alt="Zdjęcie logo" />
+          <h3>Lubuski Kurator Oświaty</h3>
+        </a>
+      </article>
+
+    </div>
+
+</section>
+
+<!-- =================== FAQ =================== -->
+
+<section id="faq" class="faq page-section" data-page="faq">
+ 
+  <h2>FAQ – pytania i odpowiedzi</h2>
+ 
+    <details>
+ 
+      <summary>Jakie są zasady udziału?</summary>
+      <p>Udział jest bezpłatny, wymagana jest rejestracja przez formularz albo odpowiedź na maila z zaproszeniem.</p>
+ 
+    </details>
+ 
+    <details>
+ 
+      <summary>Czy wydarzenie będzie nagrywane?</summary>
+      <p>Tak, nagrania udostępnimy uczestnikom po wydarzeniu oraz będą dostępne na naszym kanale na youtube.</p>
+       <a href="https://cwtuw.pl/" target="_blank" rel="noopener" aria-label="youtube"></a>
+ 
+    </details>
+ 
+    <details>
+ 
+      <summary>Czy zapewniacie tłumaczenie?</summary>
+      <p>Prelekcje będą prowadzone po polsku.</p>
+ 
+    </details>
+
+</section>  
+
+<section id="info-panel" class="page-section section-soft" data-page="faq">
+
+  <h2>Informacje dodatkowe</h2>
+
+  <p class="info-lead">Polecane wydarzenia i materiały:</p>
+
+  <div class="info-links">
+    <a href="https://cwtuw.pl/aktualnosci/" target="_blank">
+      <span class="icon">📘</span>
+      Na wspólnej drodze pomocy psychologicznej
+    </a>
+
+    <a href="https://lci-lubuskie.pl/2025/09/23/postaw-na-siebie-mlodzi-o-przemocy-rowiesniczej/" target="_blank">
+      <span class="icon">🧠</span>
+      „Postaw na siebie” – młodzi o przemocy rówieśniczej
+    </a>
+
+    <a href="https://ko-gorzow.edu.pl/cyberczat/" target="_blank">
+      <span class="icon">💬</span>
+      Konferencja „Cyber Czat”
+    </a>
+  </div>
+
+  <blockquote class="info-quote">
+    „Dobro dziecka to odpowiedzialność nas wszystkich.”
+  </blockquote>
+ 
+</section>
+ 
+</main>
+
+<!-- =================== FOOTER =================== -->
+
+<footer id="kontakt" class="site-footer">
+
+  <div class="container footer-grid">
+
+    <div class="footer-col">
+      <h3>Kontakt</h3>
+
+      <address>
+        Centrum Wsparcia i Terapii Uzależnień i Współuzależnienia<br>
+        Iwona Jackowska i Wspólnicy Spółka Komandytowa<br>
+
+        Nietoperek 54a<br>
+        66-300 Międzyrzecz<br>
+
+        <a href="mailto:centrum@cwtuw.pl">centrum@cwtuw.pl</a><br>
+        <a href="tel:+48123456789">+48 691 753 858</a>
+      </address>
+    </div>
+
+    <div class="footer-col footer-social">
+      <h3>Social media</h3>
+
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/uzaleznieniamiedzychod" target="_blank" rel="noopener" aria-label="Facebook">
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a href="https://cwtuw.pl/" target="_blank" rel="noopener" aria-label="Strona CWTUW">
+            CWTUW
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="footer-copy">
+    © 2026 Konferencja „Dziecko w Sieci – Bezpieczeństwo, Rozwój, Odpowiedzialność””
+  </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
