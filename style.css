@@ -46,12 +46,6 @@ header {
   border-bottom: 1px solid var(--border); 
 } 
 
-body.dark header { 
-  background: rgba(255,255,255,.75); 
-  backdrop-filter: blur(10px); 
-  border-bottom: 1px solid var(--border); 
-} 
-
 /* MENU */
 
 .menu-toggle { 
@@ -187,10 +181,54 @@ nav a:hover, nav a:focus {
   background: var(--border); 
 } 
 
+
+/*loga po menu*/
+
+.org-logos {
+  padding: 8px 0 4px;
+  background: transparent;
+  border: none;
+}
+
+.org-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  align-items: center;
+  gap: 32px;
+
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.org-logos-grid img {
+  max-height: 64px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+
+  filter: grayscale(100%) contrast(1.1);
+  opacity: 0.85;
+
+  transition: 
+    filter .25s ease,
+    opacity .25s ease,
+    transform .25s ease;
+}
+
+.org-logos-grid img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.04);
+}
+
 /* Naglówek */ 
 
 .hero{ 
-  padding:70px 0 34px; 
+  padding:34px 0 54px; 
   position: relative; 
   overflow: hidden; 
   text-align: center; 
@@ -213,6 +251,7 @@ nav a:hover, nav a:focus {
   font-weight: 600;
   color: var(--brand-2); 
   margin-bottom: 12px; 
+  margin-top: 45px;
 }
 
 h1 { 
@@ -313,17 +352,10 @@ section > h2::after {
   margin-top: 10px;
 } 
 
-#o-wydarzeniu .about-content p {
-  color: rgba(230, 232, 238, 0.8);
-}
-
-#o-wydarzeniu .about-heading {
-  color: #ffffff;
-}
 
 .about-layout {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1.4fr 1fr;
   gap: 32px;
   align-items: center;
   margin-top: 24px;
@@ -369,17 +401,15 @@ section > h2::after {
 
 .about-summary p {
   font-size: 15px;
-  color: rgba(230, 232, 238, 0.9);
   font-weight: 600;
 }
 
 .about-image {
-  max-width: 800px;
   width: 100%;
   height: auto;
-  margin: 20px auto;
   display: block;
-  border-radius: 14px;
+
+  border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,.25);
 }
 
@@ -713,26 +743,6 @@ footer {
 .social{ justify-content: flex-start; }
 } 
 
-body.dark { 
-  --bg: #f1f3f6;
-  --card: #e6e9ef;
-  --text: #0f172a; 
-  --muted: #5b6478; 
-  --brand: #4f6ef7; 
-  --brand-2: #16a34a; 
-  --accent: #4f6ef7; 
-  --ring: rgba(79,110,247,.25); 
-  --border: rgba(15,23,42,.12); 
-}
-
-
-body.dark nav a { 
-  color: var(--text); 
-} 
-
-body.dark nav a:hover { 
-  background: rgba(15,23,42,.06);
-} 
  
 .logo img { 
   height: 32px; 
@@ -765,17 +775,7 @@ body.dark nav a:hover {
   opacity: 0; 
 } 
 
-body.dark .theme-toggle { 
-  background: #475569; 
-} 
 
-body.dark .theme-toggle .sun { 
-  opacity: 0; 
-} 
-
-body.dark .theme-toggle .moon { 
-  opacity: 1; 
-}
 
 .nav-actions {
   display: flex;
@@ -1006,13 +1006,6 @@ section.card {
   gap: 32px;
 }
 
-body.dark .registration form.card {
-  border: 1px solid rgba(124,156,255,.35);
-  box-shadow:
-    0 0 0 1px rgba(124,156,255,.18),
-    0 10px 30px rgba(15,23,42,.25);
-}
-
 .registration .info-panel {
   border: 1px solid rgba(124,156,255,.35);
   box-shadow:
@@ -1057,11 +1050,6 @@ body.dark .registration form.card {
     border-color .2s ease;
 }
 
-body.dark .info-links a {
-  background: #dde1ea;
-  border: 1px solid var(--border);
-}
-
 .info-links a:hover {
   transform: translateY(-2px);
   border-color: var(--brand);
@@ -1096,10 +1084,6 @@ body.dark .info-links a {
     border-color .25s ease,
     box-shadow .25s ease,
     transform .15s ease;
-}
-
-body.dark .faq details {
-  background: #dde1ea;
 }
 
 .faq details:hover {
@@ -1277,4 +1261,144 @@ body.dark .faq details {
   display: block;
 }
 
+/*Tryb jasny*/
 
+body.dark { 
+  --bg: #f2f4f8;
+  --card: #f8fafc;
+  --text: #0f172a; 
+  --muted: #475569; 
+  --brand: #4f6ef7; 
+  --brand-2: #16a34a; 
+  --accent: #4f6ef7; 
+  --ring: rgba(79,110,247,.18); 
+  --border: rgba(15,23,42,.08); 
+  background: var(--bg);
+}
+
+body.dark #patronaci h2 {
+  color: var(--text);
+}
+
+body.dark .about-image {
+  box-shadow: 0 20px 40px rgba(15,23,42,.15);
+}
+
+body.dark nav a { 
+  color: var(--text); 
+} 
+
+body.dark nav a:hover { 
+  background: rgba(15,23,42,.06);
+} 
+
+body.dark .theme-toggle { 
+  background: #475569; 
+} 
+
+body.dark .theme-toggle .sun { 
+  opacity: 0; 
+} 
+
+body.dark .theme-toggle .moon { 
+  opacity: 1; 
+}
+
+body.dark .faq details {
+  background: #dde1ea;
+}
+
+body.dark .info-links a {
+  background: #dde1ea;
+  border: 1px solid var(--border);
+}
+
+body.dark .registration form.card {
+  border: 1px solid rgba(124,156,255,.35);
+  box-shadow:
+    0 0 0 1px rgba(124,156,255,.18),
+    0 10px 30px rgba(15,23,42,.25);
+}
+
+body.dark header { 
+  background: rgba(255,255,255,.75); 
+  backdrop-filter: blur(10px); 
+  border-bottom: 1px solid var(--border); 
+} 
+
+body.dark .hero::before {
+  background: none;
+}
+
+body.dark .lead,
+body.dark .about-content p,
+body.dark .about-summary p,
+body.dark .agenda-card p,
+body.dark .location-list li,
+body.dark .faq details p,
+body.dark .footer-copy {
+  color: #475569;
+}
+
+body.dark .card,
+body.dark .agenda-card,
+body.dark .faq details {
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+body.dark .logos article {
+  background: #ffffff;
+}
+
+body.dark .logos article h3 {
+  color: var(--text);
+}
+
+body.dark .logos article img {
+  filter: none;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+body.dark .speaker-card {
+  background: var(--card);
+  box-shadow: 0 8px 24px rgba(15,23,42,.08);
+}
+
+body.dark .speaker-card h3 {
+  color: var(--text);
+}
+
+body.dark .speaker-card p {
+  color: var(--muted);;
+}
+
+body.dark .faq details[open] {
+  background: #f1f5f9;
+}
+
+body.dark .agenda-timeline::before {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(15, 23, 42, 0.12),
+    transparent
+  );
+}
+
+body.dark input,
+body.dark textarea {
+  background: #ffffff;
+  border: 1px solid rgba(15,23,42,.18);
+}
+
+body.dark #o-wydarzeniu .about-heading {
+  color: #0f172a;
+}
+
+body.dark #o-wydarzeniu .about-content p,
+body.dark .about-summary p {
+  color: #475569;
+}
