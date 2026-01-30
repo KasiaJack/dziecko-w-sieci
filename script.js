@@ -95,3 +95,28 @@ navLinks.forEach(link => {
 
 // strona startowa
 showPage("home");
+
+//Walidacja formularza 
+
+
+  const form = document.querySelector("form");
+  const msg = document.getElementById("form-msg");
+
+  form.addEventListener("submit", function (e) { e.preventDefault(); 
+
+    const imie = form.imie.value.trim();
+    const email = form.email.value.trim();
+
+    if (imie === "" || email === "") {
+      msg.textContent = "Uzupełnij imię i email!";
+      msg.style.color = "red";
+    } 
+    if (!email.includes("@")) {
+  msg.textContent = "Podaj poprawny adres email!";
+  msg.style.color = "red";
+  return;
+    }
+      msg.textContent = "Rejestracja przebiegła pomyślnie ✅";
+      msg.style.color = "green";
+      form.reset();
+  });
